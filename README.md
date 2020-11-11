@@ -1,2 +1,2 @@
 # yumyum
-official repository of YumYum! which is a software development project for CSE305
+Official repository of YumYum! which is a software development project for CSE305.
