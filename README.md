@@ -3,7 +3,7 @@ Official repository of **YumYum!** which is a software development project for C
 
 YumYum is a yelp-like restaurant finder app.  
 Currently being developed by:  
-@fatih-keskin  
-@frknltrk  
-@aliefee  
+[@fatih-keskin](https://github.com/fatih-keskin)  
+[@frknltrk](https://github.com/frknltrk)  
+[@aliefee](https://github.com/aliefee)  
 
