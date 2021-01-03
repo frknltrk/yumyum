@@ -1,21 +1,13 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "YumYum restaurant finder app backend",
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/frknltrk/yumyum.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/frknltrk/yumyum/issues"
-  },
-  "homepage": "https://github.com/frknltrk/yumyum#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
@@ -23,5 +15,6 @@
     "morgan": "^1.10.0",
     "nodemon": "^2.0.6",
     "pg": "^8.5.1"
-  }
+  },
+  "description": ""
 }
