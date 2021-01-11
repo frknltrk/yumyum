@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import RestaurantFinder from "../apis/RestaurantFinder";
 import { useLocation, useParams, useHistory } from "react-router-dom";
+import AuthService from "../services/auth.service";
 
 const AddReview = () => {
   const { id } = useParams();
@@ -9,7 +10,9 @@ const AddReview = () => {
   const history = useHistory();
   console.log(id);
 
-  const [name, setName] = useState("");
+  const currentUser = AuthService.getCurrentUser();
+
+  const name = currentUser.username;
   const [reviewText, setReviewText] = useState("");
   const [rating, setRating] = useState("Rating");
 
@@ -21,23 +24,25 @@ const AddReview = () => {
         review: reviewText,
         rating,
       });
-      history.push("/");
+      history.push("/restaurants");
       history.push(location.pathname);
     } catch (err) {}
   };
+
+
   return (
     <div className="mb-2">
       <form action="">
         <div className="form-row">
           <div className="form-group col-8">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name">Username</label>
             <input
               value={name}
-              onChange={(e) => setName(e.target.value)}
               id="name"
-              placeholder="name"
+              placeholder={currentUser.username}
               type="text"
               className="form-control"
+              readOnly
             />
           </div>
           <div className="form-group col-4">

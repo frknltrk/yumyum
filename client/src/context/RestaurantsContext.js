@@ -1,6 +1,6 @@
 import React , {useState,createContext} from "react";
 
-export const RestaurantsContext = createContext();
+const RestaurantsContext = createContext();
 
 export const RestaurantsContextPorvider = (props) =>{
     const[restaurants,setRestaurants] = useState([]);
@@ -14,4 +14,8 @@ export const RestaurantsContextPorvider = (props) =>{
             {props.children}
         </RestaurantsContext.Provider>
     );
+};
+
+export {
+    RestaurantsContext
 };

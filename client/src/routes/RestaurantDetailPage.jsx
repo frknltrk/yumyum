@@ -27,7 +27,7 @@ export const RestaurantDetailPage = () => {
     <div>
         {selectedRestaurant && (
             <>
-            <h1 className="text-center display-1">{selectedRestaurant.restaurant.name}</h1>
+            <h1 className="text-center display-3">{selectedRestaurant.restaurant.name}</h1>
             <div className="text-center">
                 <StarRating  rating ={selectedRestaurant.restaurant.average_rating}/>
                 <span className="text-warning ml-1">
