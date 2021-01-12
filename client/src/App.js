@@ -7,7 +7,7 @@ import AuthService from "./services/auth.service";
 
 import Login from "./components/Login";
 import Register from "./components/Register";
-import Home from "./components/Home";
+//import Home from "./components/Home";
 import Profile from "./components/Profile";
 import BoardUser from "./components/BoardUser";
 /*import BoardModerator from "./components/BoardModerator";*/
@@ -17,8 +17,8 @@ import BoardAdmin from "./components/BoardAdmin";
 
 import RestaurantdetailPage from './routes/RestaurantDetailPage';
 import UpdatePage from './routes/UpdatePage';
-import ResList from "./routes/Home";
-import ResListAdmin from "./routes/HomeAdmin";
+import Home from "./routes/Home";
+import HomeAdmin from "./routes/HomeAdmin";
 import { RestaurantsContextPorvider } from './context/RestaurantsContext';
 
 
@@ -94,7 +94,7 @@ const App = () => {
       <div className="container mt-3">
         <Switch>
           <RestaurantsContextPorvider>
-          <Route exact path={["/", "/home"]} component={ResList} />
+          <Route exact path={["/", "/home"]} component={Home} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
           <Route exact path="/profile" component={Profile} />
@@ -102,8 +102,8 @@ const App = () => {
           <Route path="/admin" component={BoardAdmin} />
           
           <div className ="container">
-          <Route exact path = "/restaurants" component = {ResList} />
-          <Route exact path = "/restaurantsadmin" component = {ResListAdmin} />
+          <Route exact path = "/restaurants" component = {Home} />
+          <Route exact path = "/restaurantsadmin" component = {HomeAdmin} />
           <Route exact path = "/restaurants/:id/update" component = {UpdatePage} />
           <Route exact path = "/restaurants/:id" component = {RestaurantdetailPage} />
           </div>

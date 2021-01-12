@@ -6,17 +6,17 @@ const Header = () => {
       <form action="">
         <div className="form-row pt-5">
           <div className="col">
-          	<div class="input-group input-group-lg">
+          	<div className="input-group input-group-lg">
 	              	<input 
 	              	  type="text" 
-	              	  class="form-control" 
+	              	  className="form-control" 
 	              	  placeholder="Search"
 	              	  aria-label="Large" 
 	              	  aria-describedby="inputGroup-sizing-sm"
 	              	/>
-	            <div class="input-group-append">
+	            <div className="input-group-append">
 	    			<button 
-	    			  class="btn btn-outline-secondary" 
+	    			  className="btn btn-outline-secondary" 
 	    			  type="button"
 	    			>
 	    			Search Restaurants
