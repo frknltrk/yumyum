@@ -93,19 +93,20 @@ const App = () => {
 
       <div className="container mt-3">
         <Switch>
+          <RestaurantsContextPorvider>
           <Route exact path={["/", "/home"]} component={ResList} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
           <Route exact path="/profile" component={Profile} />
           <Route path="/user" component={BoardUser} />
           <Route path="/admin" component={BoardAdmin} />
-          <RestaurantsContextPorvider>
-            <div className ="container">
+          
+          <div className ="container">
           <Route exact path = "/restaurants" component = {ResList} />
           <Route exact path = "/restaurantsadmin" component = {ResListAdmin} />
           <Route exact path = "/restaurants/:id/update" component = {UpdatePage} />
           <Route exact path = "/restaurants/:id" component = {RestaurantdetailPage} />
-            </div>
+          </div>
           </RestaurantsContextPorvider>
         </Switch>
       </div>

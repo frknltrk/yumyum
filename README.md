@@ -25,6 +25,6 @@ cd client
 npm install
 npm start
 ```
-in _server/server.js_:  
+in `server/server.js`:  
 uncomment the line 24  
 comment lines 20-23  
