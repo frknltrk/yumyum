@@ -50,7 +50,7 @@ uncomment the line 24
 comment lines 20-23  
 
 #### Add admin account
-any HTTP requesting app can be used
+any HTTP requesting app can be used  
 curl example:
 ```bash
 curl -X POST -H 'Content-Type: application/json' -i http://localhost:4000/api/auth/signup --data '{
