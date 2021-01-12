@@ -36,7 +36,6 @@ CREATE TABLE reviews (
 
 #### Start Express API
 =======
->>>>>>> 979f39bda82b998333159f912e18ead2a7d5296e
 in `server/server.js`:  
 comment the line 24  
 uncomment lines 20-23  
