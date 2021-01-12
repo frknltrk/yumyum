@@ -8,7 +8,7 @@ Currently being developed by:
 [@aliefee](https://github.com/aliefee)  
 
 ### Installation
-in _server/server.js_:  
+in `server/server.js`:  
 comment the line 24  
 uncomment lines 20-23  
 
