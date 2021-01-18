@@ -30,3 +30,12 @@ label {
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
+body {
+  background-image: url("images/img2.jpg");
+  background-position: center;
+  background-size: cover;
+ }
+ h5,h1 {
+   color: white;
+  text-shadow: 2px 2px black;
+ }

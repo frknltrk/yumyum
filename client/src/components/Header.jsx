@@ -7,20 +7,9 @@ const Header = () => {
         <div className="form-row pt-5">
           <div className="col">
           	<div className="input-group input-group-lg">
-	              	<input 
-	              	  type="text" 
-	              	  className="form-control" 
-	              	  placeholder="Search"
-	              	  aria-label="Large" 
-	              	  aria-describedby="inputGroup-sizing-sm"
-	              	/>
+	            
 	            <div className="input-group-append">
-	    			<button 
-	    			  className="btn btn-outline-secondary" 
-	    			  type="button"
-	    			>
-	    			Search Restaurants
-	    			</button>
+	    			
   				</div>
 	        </div>
           </div>

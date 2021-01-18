@@ -17,11 +17,11 @@ app.use(express.json());
 /******************************************************************/
 
 const Role = user_db.role;
-/*user_db.sequelize.sync({force: true}).then(() => {
+user_db.sequelize.sync({force: true}).then(() => {
   console.log('Drop and Resync Db');
   initial();
-});*/
-user_db.sequelize.sync();
+});
+//user_db.sequelize.sync();
 // auth ro11utes
 require('./routes/auth.routes')(app);
 require('./routes/user.routes')(app);
